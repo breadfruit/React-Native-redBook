@@ -9,6 +9,7 @@ import PageA from './src/modules/PageA';
 import PersonalInfo from './src/modules/PersonalInfo';
 import ViewDemo from './src/components/ViewDemo';
 import TextDemo from './src/components/TextDemo';
+import ImageDemo from './src/components/ImageDemo';
 
 
 const Stack = createNativeStackNavigator();
@@ -23,11 +24,11 @@ function App() {
       </StatusBar>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName='TextDemo'
+          initialRouteName='ImageDemo'
         >
           <Stack.Screen 
-            name="TextDemo" 
-            component={TextDemo} 
+            name="ImageDemo" 
+            component={ImageDemo} 
             options={{ 
               title: 'My home', 
            }}
